@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueValidator from 'vue-validator'
-// import VueDragableFor from 'vuedragablefor'
 import Filter from './base/filter.js'
 import Directive from './base/directive.js'
 
@@ -18,8 +17,7 @@ Vue.use(VueRouter);
 Vue.filter(Filter);
 Vue.directive(Directive);
 Vue.use(VueValidator);
-Vue.use(require('vue-moment'));
-// Vue.use(VueDragableFor);
+// Vue.use(require('vue-moment'));
 
 const router = new VueRouter()
 
