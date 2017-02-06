@@ -20,9 +20,7 @@
   <div class="m-home" v-if="$route.query.appId">
     <router-view></router-view>
   </div>
-  <div class="m-home" v-if="$route.query.productId && !$route.query.appId">请选择左侧的应用哟~</div>
 </div>
-<div class="no-data" v-else>请选择左侧的产品呦~</div>
 </template>
 
 <script>

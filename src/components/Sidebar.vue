@@ -1,9 +1,5 @@
 <template>
     <div class="m-sidebar">
-        <ul class="tlt">
-          <li><a v-link="'/home/list'" :class="{ 'act': $route.name != 'follow/list'}">我的产品</a></li>
-          <li><a v-link="'/follow/list'" :class="{ 'act': $route.name == 'follow/list'}">我的收藏</a></li>
-        </ul>
         <ul class="list" v-if="$route.name != 'follow/list'">
           <li v-for="item in productList">
               <a :class="{ 'act': $route.query.productId == item.productId }"

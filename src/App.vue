@@ -3,13 +3,10 @@
     <header class="f-cb">
         <div class="m-logo">
             <a class="" href="#" v-link="'/home'">
-              网易自动部署平台
+              vue测试
             </a>
         </div>
         <ul class="m-nav f-fr">
-            <li v-if="$router.locals.isAdmin=='1'"><a v-link="'/sysConfig/buildServer'"><i class="u-icon u-icon-sys"></i>系统设置</a></li>
-            <li><a v-link="'/userConfig/secretKey'"><i class="u-icon u-icon-user"></i>个人设置</a></li>
-            <li>{{ $router.locals.userName }}</li>
             <li><a href="/logout"><i class="u-icon u-icon-exit"></i>退出</a></li>
         </ul>
     </header>
